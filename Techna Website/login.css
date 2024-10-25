@@ -1,0 +1,57 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Assets/LandingPage/hero-bg.svg);
+    justify-content: center;
+    gap: 5vw;
+    padding: 5vw;
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+#login-logo{
+    font-size: 1.5rem;
+}
+h1{
+    margin: 0;
+}
+form{
+    font-family: mont;
+    width: 40vw;
+    padding: 1vw 1vh;
+    flex-direction: column;
+    gap: 1vw;
+}
+#details{
+    background-image: linear-gradient(to right, #0a3753, #061e36);
+    border-radius: 40px;
+    flex-direction: column;
+}
+input{
+    width: 80%;
+    font-family: mont;
+    font-size: 1rem;
+    width: 70%;
+    height: 2rem;
+}
+#submit{
+    font-family: mont;
+}
+#change-login{
+    color: white;
+    text-decoration: none;
+}
+@media (width < 1000px) {
+    img{
+        width: 80vw;
+    }
+    form{
+        width: 80vw;
+        padding: 4vw;
+        gap: 2vh;
+    }
+    input{
+        width: 90%;
+    }
+}

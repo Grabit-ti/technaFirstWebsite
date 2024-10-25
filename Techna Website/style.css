@@ -7,7 +7,9 @@
   font-family: mont;
   src: url("fonts/Mont-HeavyDEMO.otf") format("opentype");
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   color: #e1ecee;
   background-color: #020d10;
@@ -21,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: space-around;
+  overflow: hidden;
 }
 .divider{
   font-family: open-sans;
@@ -207,7 +210,6 @@ nav button:hover {
   width: 100vw;
   padding: 5vh 5vw;
   gap: 20vw;
-  font-size: 1vw;
 }
 #inquiry{
   width: 600px;
@@ -261,9 +263,16 @@ footer {
 
 /* Media Queries */
 @media (max-width: 1200px) {
+  .features{
+    flex-direction: column;
+    align-items: center;
+  }
   #hero{
     height: auto;
     margin-top: 0;
+  }
+  #brand-logo{
+    width: 400px;
   }
   nav{
     text-align: center;
@@ -271,8 +280,13 @@ footer {
   nav button{
     border: none;
   }
-  #contacts{
-    gap: 3vh;
+  #main-feature{
+    width: 90vw;
+    font-size: 1.5rem;
+    padding: 2vw;
+  }
+  #main-content{
+    width: 80vw;
   }
   #contacts{
     flex-direction: column;
@@ -283,22 +297,6 @@ footer {
   }
   #contact-info{
     width: 90vw;
-  }
-  #main-feature{
-    font-size: 1.5rem;
-    padding: hvw 1vw;
-  }
-  #main-content{
-    width: 80vw;
-  }
-}
-@media (max-width: 800px) {
-  #brand-logo{
-    width: 90vw;
-    padding: 5vw;
-  }
-  .features{
-    width: 80vw;
   }
 }
 
@@ -326,9 +324,7 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
-* {
-  box-sizing: border-box;
-}
+
 .responsive {
   padding: 0 6px;
   width: 35%;
@@ -341,7 +337,7 @@ h1 {
   flex: 2;
   padding-left: 20px;
 }
-.gallery-container {
+#gallery-container {
   text-align: center;
 }
 /*Reviews&Reccomended*/
