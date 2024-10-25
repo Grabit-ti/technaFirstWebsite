@@ -1,0 +1,379 @@
+/*Index*/
+@font-face {
+  font-family: megrath;
+  src: url("../fonts/Megrath.ttf");
+}
+@font-face {
+  font-family: mont;
+  src: url("fonts/Mont-HeavyDEMO.otf") format("opentype");
+}
+
+body {
+  color: #e1ecee;
+  background-color: #020d10;
+  font-family: sans-serif;
+  margin: 0px;
+}
+.flexed{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+.divider{
+  font-family: open-sans;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  background-image: linear-gradient(180deg,#0a3753, #061e36);
+}
+/*Header*/
+header{
+  width: 100vw;
+  padding: 0 2vw;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-image:linear-gradient(#0a3753, #061e36);
+}
+#logoPlaceHolder{
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  font-family: megrath;
+}
+#logoPlaceHolder h1{
+  margin: 0px;
+  font-size: 40px;
+  font-weight: 700;
+}
+#header-logo{
+  width: 80px;
+}
+nav{
+  text-align: right;
+  flex-grow: 1;
+}
+nav button{
+  font-size: 25px; 
+  font-family: megrath;
+  padding: 5px 50px;
+  color: #e1ecee;
+  border: none;
+  border-left: solid 2px #06d2c5;
+  background-color: transparent; 
+  cursor:pointer;
+}
+nav button:hover {
+  color: #06d2c5;
+  border: solid 2px #06d2c5;
+  border-radius: 20px;
+  background-color: #031222;
+}
+/*Hero*/
+#hero{
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5vw;
+  margin-top: -50px;
+  gap: 5vw;
+  background-image: url(Assets/LandingPage/hero-bg.svg);
+}
+#brand-logo{
+  width: 650px;
+}
+#hero-txt{
+  width: 300px;
+  flex-grow: 1;
+}
+#tagline {
+  font-family: mont;
+  font-size: 50px;
+  text-align: start;
+  /*somewhat obscure property*/
+  background-clip: text;
+  background-image:linear-gradient(to right,#06d2c5, #0a3753); 
+  color: transparent;
+}
+#introduction{
+  text-align: justify;
+  font-size: 30px;
+}
+#redirect{
+  float: left;
+  text-decoration: none;
+}
+#picdirect {
+  width: 80px;
+}
+#linkto {
+  color:#06d2c5;
+  background-color: transparent;
+  font-family: mont;
+  font-size: 40px;
+  border: none;
+}
+#linkto:hover {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 4px;
+  cursor: pointer;
+}
+/*Main-Feature*/
+#main-feature{
+  width: 70vw;
+  font-size: 1.5rem;
+  padding: 2vw 5vh;
+  margin-top: 5vh;
+  border-radius: 40px;
+  background-image: linear-gradient(to right, #0a3753, #061e36);
+}
+#main-content{
+  width: 40Vw;
+  text-align: justify;
+  justify-content: left;
+  margin-top: 1vh;  
+}
+#main-content h1{
+  font-size: 3rem;
+  margin: 0;
+}
+#main-content ul{
+  text-align: left;
+}
+#main-feature img{
+  width: 400px;
+}
+/*Ohter-Features*/
+#feature {
+  padding: 5vh 5vw;
+  gap: 4vw;
+  align-items: start;
+}
+.features{
+  width: 350px;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  border-radius: 20px;
+  padding: 2%;
+  background-image: linear-gradient(to right, #0a3753, #061e36);
+}
+.features p{
+  height: 30%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+#feature img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+/*Team*/
+#leaders{
+  gap: 5vw;
+  padding-top: 5vh;
+}
+#membersList{
+  gap: 2vw;
+  row-gap: 2vh;
+  padding: 5vh 5vw;
+}
+.members{
+  border-radius: 20px;
+}
+.members div{
+  background-color: #061e36;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #0a3753 6px ;
+}
+#team img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-image: linear-gradient(180deg,#0a3753, #061e36);
+}
+/* Contacts */
+#contacts{
+  width: 100vw;
+  padding: 5vh 5vw;
+  gap: 20vw;
+  font-size: 1vw;
+}
+#inquiry{
+  width: 600px;
+  font-size: 1rem;
+  border: 6px solid #061e36;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 1vw 1vh;
+  justify-content: space-around;
+  gap: 10px;
+  background-image: linear-gradient(180deg, #0a3753, #061e36);
+}
+#inquiry input{
+  width: 80%;
+}
+#message {
+  max-width: 80%;
+  min-width: 80%;
+  min-height: 200px;
+}
+#submit{
+  font-size: 1rem;
+  color: #e1ecee;
+  border: solid 2px #031222;
+  border-radius: 20px;
+  background-color: #031222;
+  cursor: pointer;
+  width: 30%;
+}
+#contact-info{
+  width: 400px;
+  font-size: 1rem;
+  border: 6px solid #061e36;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 1vw 1vh;
+  background-image: linear-gradient(180deg, #0a3753, #061e36);
+}
+#contact-info img{
+  width: 50px;
+}
+#contact-info a{
+  color: #e1ecee;
+  line-height: 2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  #hero{
+    height: auto;
+    margin-top: 0;
+  }
+  nav{
+    text-align: center;
+  }
+  nav button{
+    border: none;
+  }
+  #contacts{
+    gap: 3vh;
+  }
+  #contacts{
+    flex-direction: column;
+    gap: 5vh;
+  }
+  #inquiry{
+    width: 90vw;
+  }
+  #contact-info{
+    width: 90vw;
+  }
+  #main-feature{
+    font-size: 1.5rem;
+    padding: hvw 1vw;
+  }
+  #main-content{
+    width: 80vw;
+  }
+}
+@media (max-width: 800px) {
+  #brand-logo{
+    width: 90vw;
+    padding: 5vw;
+  }
+  .features{
+    width: 80vw;
+  }
+}
+
+/*Owls Nest*/
+.owl_nest {
+  height: 50%;
+  align-self: center;
+}
+
+div.gallery {
+  border: 3px dotted #ccc;
+  margin: 5px;
+  border-radius: 20px;
+  transition: 1s;
+}
+div.gallery:hover {
+  border: 3px dotted #0eacb5;
+}
+div.gallery img {
+  width: 40%;
+  height: auto;
+  align-content: center;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px;
+  width: 35%;
+  display: inline-block;
+}
+h1 {
+  text-align: center;
+}
+.info {
+  flex: 2;
+  padding-left: 20px;
+}
+.gallery-container {
+  text-align: center;
+}
+/*Reviews&Reccomended*/
+#reviews{
+  margin: 0;
+  width: 100vw;
+  gap: 6vw;
+  row-gap: 1vw;
+  padding: 5vh 2vw;
+  background-color: transparent;
+  line-height: 40px;
+}
+#reviews img{
+  width: 180px;
+  border: solid 4px #0a3753;
+  border-radius: 50%;
+}
+#reviews p{
+  padding: 10px;
+  border: solid #0a3753 4px;
+  background-color: #031222;
+  border-radius: 20px;
+}
+.topReviews{
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+/*Bee's Nest*/
+.item {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+}
