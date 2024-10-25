@@ -74,6 +74,7 @@ nav button:hover {
   border: solid 2px #06d2c5;
   border-radius: 20px;
   background-color: #031222;
+  text-decoration: none;
 }
 /*Hero*/
 #hero{
