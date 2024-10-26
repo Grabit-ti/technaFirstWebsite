@@ -1,20 +1,27 @@
-body{
+section{
     width: 100vw;
     height: 100vh;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url(Assets/LandingPage/hero-bg.svg);
-    justify-content: center;
-    gap: 5vw;
-    padding: 5vw;
 }
-img{
+#login-logo{
+    font-size: 2rem;
+}
+#login-logo img{
     width: 400px;
     height: 400px;
 }
-#login-logo{
-    font-size: 1.5rem;
-}
 h1{
     margin: 0;
+}
+#details{
+    width: 50vw;
+    border-radius: 40px;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #0a3753, #061e36);
 }
 form{
     font-family: mont;
@@ -23,16 +30,10 @@ form{
     flex-direction: column;
     gap: 1vw;
 }
-#details{
-    background-image: linear-gradient(to right, #0a3753, #061e36);
-    border-radius: 40px;
-    flex-direction: column;
-}
 input{
-    width: 80%;
+    width: 40vw;
     font-family: mont;
     font-size: 1rem;
-    width: 70%;
     height: 2rem;
 }
 #submit{
@@ -43,15 +44,12 @@ input{
     text-decoration: none;
 }
 @media (width < 1000px) {
-    img{
-        width: 80vw;
+
+    #login-logo{
+        flex-direction: column;
     }
-    form{
-        width: 80vw;
-        padding: 4vw;
-        gap: 2vh;
-    }
-    input{
-        width: 90%;
+    #login-logo img{
+        width: 200px;
+        height: 200px;
     }
 }

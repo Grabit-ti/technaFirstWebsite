@@ -6,20 +6,35 @@
         <link rel="stylesheet" href="login.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="flexed">
-        <div id="login-logo">
-            <h1>Techna Owl's Nest</h1>
-            <img src="Assets/LandingPage/Techna-logo-colored.svg" alt="">
-        </div>
-        <div class="flexed" id="details">
-            <form class="flexed" action="OwlsNest.html">
-                <label for="userName">Username:</label>
-                    <input type="text" placeholder="Username" required>
-                <label for="message">Password:</label>
-                    <input type="password" placeholder="Password" required>
+    <body>
+        <header class="flexed"> <!-------Navigation------->
+            <div class="flexed" id="logoPlaceHolder">
+                <a href="index.html"><img id="header-logo" src="Assets/LandingPage/Techna-logo.svg" alt="Logo"></a>
+                <h1>TECHNA</h1>
+            </div>
+            <nav>
+                <a href="#hero"><button>Home</button></a>
+                <a href="#feature"><button>About</button></a>
+                <a href="#team"><button>Team</button></a>
+                <a href="#contacts"><button>Contact Us</button></a>
+            </nav>
+        </header>
+        <section>
+            <div class="flexed" id="login-logo">
+                <img src="Assets/LandingPage/Techna-logo-colored.svg" alt="">
+                <h1>Techna Owl's Nest</h1>
+            </div>
+            <div class="flexed" id="details">
+                <form class="flexed" action="OwlsNest.html">
+                    <label for="userName">Username:</label>
+                        <input type="text" placeholder="Username" required>
+                    <label for="message">Password:</label>
+                        <input type="password" placeholder="Password" required>
                     <button id="submit"><a href="index.html" target=""></a>Login</button>
                     <a id="change-login" href="register.html">No account yet? Register here</a>
-            </form>
-        </div>
+                </form>
+            </div>
+        </section>         
     </body>
 </html>
+
