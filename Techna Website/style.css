@@ -42,9 +42,7 @@ header{
   background-image:linear-gradient(#0a3753, #061e36);
 }
 #logoPlaceHolder{
-  display: flex;
   gap: 1vw;
-  align-items: center;
   font-family: megrath;
 }
 #logoPlaceHolder h1{
@@ -142,7 +140,6 @@ nav button:hover {
 }
 #main-content h1{
   font-size: 3rem;
-  margin: 0;
 }
 #main-content ul{
   text-align: left;
@@ -158,20 +155,21 @@ nav button:hover {
 }
 .features{
   width: 350px;
-  height: 40%;
+  height: 650px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
   gap: 1rem;
   border-radius: 20px;
-  padding: 2%;
+  padding: 1vw;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
 .features p{
   height: 30%;
   font-size: 1rem;
   line-height: 1.5rem;
+  align-content: center;
   margin: 0;
 }
 #feature img {
@@ -263,14 +261,15 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
-  .features{
-    flex-direction: column;
-    align-items: center;
-  }
+@media (width < 1400px) {
   #hero{
+    flex-direction: column;
     height: auto;
-    margin-top: 0;
+    margin: 0;
+  }
+  #hero-txt{
+    width: 90vw;
+    flex-grow: 0;
   }
   #brand-logo{
     width: 400px;
@@ -282,12 +281,8 @@ footer {
     border: none;
   }
   #main-feature{
-    width: 90vw;
     font-size: 1.5rem;
-    padding: 2vw;
-  }
-  #main-content{
-    width: 80vw;
+    padding: 1vw;
   }
   #contacts{
     flex-direction: column;
